@@ -12,7 +12,6 @@ ComponentPlus({
 
   methods: {
     onJumpTo() {
-      console.log(this.$emit);
       this.$router.navigateTo(this.data.routeName);
     }
   }

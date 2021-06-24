@@ -3,8 +3,8 @@ import { ComponentPlus } from '../../utils/component-plus';
 ComponentPlus({
   data: {
     samples: [
-      { text: '瀑布流', routeName: 'Waterfall' },
-      { text: 'Footer 吸附', routeName: 'FooterSticky' }
+      { text: '基础功能', routeName: 'SampleBasic' },
+      { text: '瀑布流', routeName: 'SampleWaterfall' }
     ]
   }
 });

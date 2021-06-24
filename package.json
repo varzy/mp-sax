@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint:prettier": "prettier --loglevel warn --write \"src/**/*.{wxml,wxss,wxs,yaml,json,md}\"",
+    "lint:prettier": "prettier --loglevel warn --write \"src/**/*.{wxml,wxss,scss,wxs,yaml,json,md}\"",
     "lint:eslint": "eslint --fix \"src/**/*.js\"",
     "lint": "npm run lint:prettier && npm run lint:eslint",
     "test": "jest",
@@ -22,6 +22,7 @@
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
     "gulp-yaml": "^2.0.4",
     "prettier": "^2.0.5"
   }

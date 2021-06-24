@@ -1,0 +1,7 @@
+@import '../../../styles/mixins';
+
+.basic {
+  .long {
+    @include set-ellipsis(2);
+  }
+}

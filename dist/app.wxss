@@ -1,0 +1,46 @@
+page {
+  min-height: 100vh;
+  font-family: sans-serif;
+  color: #222;
+}
+
+.g-clearfix:before, .g-clearfix:after {
+  content: " ";
+  display: table;
+}
+.g-clearfix:after {
+  clear: both;
+}
+.g-flex {
+  display: flex;
+}
+.g-flex-top {
+  align-items: flex-start;
+}
+.g-flex-middle {
+  align-items: center;
+}
+.g-flex-bottom {
+  align-items: flex-end;
+}
+.g-flex-stretch {
+  align-items: stretch;
+}
+.g-flex-baseline {
+  align-items: baseline;
+}
+.g-flex-left {
+  justify-content: flex-start;
+}
+.g-flex-center {
+  justify-content: center;
+}
+.g-flex-right {
+  justify-content: flex-end;
+}
+.g-flex-between {
+  justify-content: space-between;
+}
+.g-flex-around {
+  justify-content: space-around;
+}

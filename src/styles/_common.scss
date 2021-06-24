@@ -1,0 +1,58 @@
+// g = namespace
+// 所有的公共样式都要以 g- 开头
+.g {
+  // clearfix
+  &-clearfix:before,
+  &-clearfix:after {
+    content: ' ';
+    display: table;
+  }
+  &-clearfix:after {
+    clear: both;
+  }
+
+  // flex
+  &-flex {
+    display: flex;
+
+    &-top {
+      align-items: flex-start;
+    }
+
+    &-middle {
+      align-items: center;
+    }
+
+    &-bottom {
+      align-items: flex-end;
+    }
+
+    &-stretch {
+      align-items: stretch;
+    }
+
+    &-baseline {
+      align-items: baseline;
+    }
+
+    &-left {
+      justify-content: flex-start;
+    }
+
+    &-center {
+      justify-content: center;
+    }
+
+    &-right {
+      justify-content: flex-end;
+    }
+
+    &-between {
+      justify-content: space-between;
+    }
+
+    &-around {
+      justify-content: space-around;
+    }
+  }
+}

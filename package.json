@@ -4,16 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "lint:prettier": "prettier --loglevel warn --write \"src/**/*.{wxml,wxss,wxs,json,md}\"",
+    "lint:prettier": "prettier --loglevel warn --write \"src/**/*.{wxml,wxss,wxs,yaml,json,md}\"",
     "lint:eslint": "eslint --fix \"src/**/*.js\"",
     "lint": "npm run lint:prettier && npm run lint:eslint",
-    "upload": "node mp-upload.js",
     "test": "jest",
-    "gulp:watch": "gulp watch"
+    "dev": "gulp watch",
+    "build": "gulp build",
+    "upload": "node mp-upload.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/eslint-parser": "^7.14.7",
+    "@babel/preset-env": "^7.14.7",
     "del": "^6.0.0",
     "eslint": "^7.29.0",
+    "eslint-plugin-prettier": "^3.4.0",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.0.2",
     "gulp-rename": "^2.0.0",

@@ -1,4 +1,6 @@
-Component({
+import { ComponentPlus } from '../../utils/component-plus';
+
+ComponentPlus({
   data: {
     samples: [
       { text: '瀑布流', routeName: 'Waterfall' },

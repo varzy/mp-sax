@@ -1,3 +1,4 @@
 node_modules
 src/miniprogram_npm
 src/vendor
+dist/

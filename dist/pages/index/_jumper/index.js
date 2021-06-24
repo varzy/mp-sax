@@ -1,6 +1,10 @@
-import { navigateTo } from '../../../router/router';
+import { ComponentPlus } from '../../../utils/component-plus';
 
-Component({
+ComponentPlus({
+  plusOptions: {
+    withRouter: true
+  },
+
   properties: {
     text: String,
     routeName: String
@@ -8,7 +12,8 @@ Component({
 
   methods: {
     onJumpTo() {
-      navigateTo(this.data.routeName);
+      console.log(this.$emit);
+      this.$router.navigateTo(this.data.routeName);
     }
   }
 });

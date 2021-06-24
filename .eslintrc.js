@@ -1,16 +1,22 @@
 module.exports = {
+  parser:'@babel/eslint-parser',
+
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module'
+  },
+
   env: {
     browser: true,
     node: true,
     es6: true,
     commonjs: true
   },
-  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
-  parser: '@babel/eslint-parser',
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module'
-  },
+
+  extends: ['eslint:recommended'],
+
+  plugins: ['prettier'],
+
   globals: {
     App: true,
     Page: true,
@@ -20,6 +26,7 @@ module.exports = {
     getApp: true,
     getCurrentPages: true
   },
+
   rules: {
     'no-unused-vars': 'warn',
     'prettier/prettier': 'warn'

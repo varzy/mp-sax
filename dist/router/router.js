@@ -45,8 +45,9 @@ const generateRoute = method => (routeName, params, events) => {
   });
 };
 
-export const switchTab = generateRoute(wx.switchTab);
-export const reLaunch = generateRoute(wx.reLaunch);
-export const navigateTo = generateRoute(wx.navigateTo);
-export const redirectTo = generateRoute(wx.redirectTo);
+const switchTab = generateRoute(wx.switchTab);
+const reLaunch = generateRoute(wx.reLaunch);
+const navigateTo = generateRoute(wx.navigateTo);
+const redirectTo = generateRoute(wx.redirectTo);
+
 export default { switchTab, reLaunch, navigateTo, redirectTo };

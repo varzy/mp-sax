@@ -1,0 +1,4 @@
+.jumper {
+  width: 100% !important;
+  background-color: #fff;
+}

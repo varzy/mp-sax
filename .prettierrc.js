@@ -17,4 +17,4 @@ module.exports = {
       options: { parser: 'babel', quoteProps: 'preserve' }
     }
   ]
-}
+};

@@ -9,4 +9,4 @@ module.exports = {
   //     '!**/__test__/**'
   // ],
   snapshotSerializers: ['miniprogram-simulate/jest-snapshot-plugin']
-}
+};

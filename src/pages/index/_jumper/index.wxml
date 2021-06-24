@@ -1,0 +1,1 @@
+<button type="primary" class="jumper" bindtap="onJumpTo">{{text}}</button>

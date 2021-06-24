@@ -5,7 +5,7 @@ module.exports = {
     es6: true,
     commonjs: true
   },
-  extends: ['eslint:recommended', "plugin:prettier/recommended"],
+  extends: ['eslint:recommended', 'plugin:prettier/recommended'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 6,
@@ -25,4 +25,3 @@ module.exports = {
     'prettier/prettier': 'warn'
   }
 };
-  

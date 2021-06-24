@@ -1,7 +1,0 @@
-<view class="index">
-  <view class="samples">
-    <view class="sample" wx:for="{{samples}}" wx:key="index">
-      <jumper text="{{item.text}}" route-name="{{item.routeName}}" />
-    </view>
-  </view>
-</view>

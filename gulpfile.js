@@ -1,9 +1,10 @@
 const path = require('path');
+const del = require('del');
 const gulp = require('gulp');
 const sass = require('gulp-dart-sass');
 const yaml = require('gulp-yaml');
-const del = require('del');
 const rename = require('gulp-rename');
+const uglify = require('gulp-uglify');
 
 const SRC = path.resolve(__dirname, './src');
 const DIST = path.resolve(__dirname, './dist');
@@ -14,7 +15,8 @@ const _assets = () =>
   gulp.src(`${SRC}/assets/**/*`).pipe(gulp.dest(path.resolve(__dirname, './dist/assets')));
 const _wxml = () => _copy('wxml');
 const _wxs = () => _copy('wxs');
-const _js = () => _copy('js');
+// const _js = () => _copy('js');
+const _js = () => gulp.src(`${SRC}/**/*.js`).pipe(uglify()).pipe(gulp.dest(DIST))
 const _json = () => _copy('json');
 const _sass = () =>
   gulp

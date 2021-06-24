@@ -1,7 +1,0 @@
-.index {
-  padding-left: 24rpx;
-  padding-right: 24rpx;
-}
-.index .samples .sample {
-  margin-top: 24rpx;
-}

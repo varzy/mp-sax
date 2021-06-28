@@ -5,5 +5,5 @@ module.exports = {
     chrome: '53',
     ios: '8'
   },
-  presets: ['@babel/preset-env'],
+  presets: ['@babel/preset-env']
 };

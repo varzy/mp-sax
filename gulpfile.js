@@ -5,19 +5,20 @@ const sass = require('gulp-dart-sass');
 const yaml = require('gulp-yaml');
 const rename = require('gulp-rename');
 const uglify = require('gulp-uglify');
+const gulpIf = require('gulp-if');
 
-const SRC = path.resolve(__dirname, './src');
-const DIST = path.resolve(__dirname, './dist');
+const isPord = process.env.NODE_ENV === 'production';
+const SRC = path.resolve(__dirname, '../src');
+const DIST = path.resolve(__dirname, '../dist');
 
 const _clean = () => del(DIST);
 const _copy = ext => gulp.src(`${SRC}/**/*.${ext}`).pipe(gulp.dest(DIST));
+const _wxs = () => _copy('wxs');
+const _json = () => _copy('json');
+const _wxml = () => _copy('wxml');
+const _js = () => gulp.src(`${SRC}/**/*.js`).pipe(gulpIf(isPord, uglify())).pipe(gulp.dest(DIST));
 const _assets = () =>
   gulp.src(`${SRC}/assets/**/*`).pipe(gulp.dest(path.resolve(__dirname, './dist/assets')));
-const _wxml = () => _copy('wxml');
-const _wxs = () => _copy('wxs');
-// const _js = () => _copy('js');
-const _js = () => gulp.src(`${SRC}/**/*.js`).pipe(uglify()).pipe(gulp.dest(DIST))
-const _json = () => _copy('json');
 const _sass = () =>
   gulp
     .src(`${SRC}/**/*.scss`)

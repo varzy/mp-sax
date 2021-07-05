@@ -1,0 +1,20 @@
+.comps {
+  .case {
+    padding: 16rpx 24rpx;
+    border-bottom: 1px solid #ccc;
+
+    &-title {
+      font-size: 36rpx;
+      font-weight: bold;
+    }
+
+    &-switch {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 28rpx;
+      color: #666;
+      margin-bottom: 12rpx;
+    }
+  }
+}

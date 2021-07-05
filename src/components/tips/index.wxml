@@ -1,0 +1,5 @@
+<view class="tips">
+  <view class="tips-item" wx:for="{{tips}}" wx:key="index">
+    <rich-text nodes="{{(withPrefix ? (useIndex ? index + 1 + '、' : '* ') : '') + item }}" />
+  </view>
+</view>

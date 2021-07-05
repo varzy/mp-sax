@@ -1,0 +1,25 @@
+<view class="comps">
+  <view class="case tips">
+    <view class="case-title">Tips</view>
+    <view class="case-content">
+      <view class="case-switch">
+        显示序号
+        <switch
+          checked="{{tips.withPrefix}}"
+          data-prop="withPrefix"
+          bindchange="onTipsPropsChange"
+        ></switch>
+      </view>
+      <view class="case-switch">
+        使用有序序号
+        <switch
+          checked="{{tips.useIndex}}"
+          data-prop="useIndex"
+          bindchange="onTipsPropsChange"
+        ></switch>
+      </view>
+
+      <tips tips="{{tips.tips}}" with-prefix="{{tips.withPrefix}}" use-index="{{tips.useIndex}}" />
+    </view>
+  </view>
+</view>

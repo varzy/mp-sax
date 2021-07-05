@@ -8,8 +8,8 @@ const uglify = require('gulp-uglify');
 const gulpIf = require('gulp-if');
 
 const isPord = process.env.NODE_ENV === 'production';
-const SRC = path.resolve(__dirname, '../src');
-const DIST = path.resolve(__dirname, '../dist');
+const SRC = path.resolve(__dirname, './src');
+const DIST = path.resolve(__dirname, './dist');
 
 const _clean = () => del(DIST);
 const _copy = ext => gulp.src(`${SRC}/**/*.${ext}`).pipe(gulp.dest(DIST));
@@ -40,6 +40,7 @@ const watch = gulp.series(build, () => {
   gulp.watch(`${SRC}/**/*.yaml`, _yaml);
   gulp.watch(`${SRC}/**/*.json`, _json);
   gulp.watch(`${SRC}/**/*.scss`, _sass);
+  gulp.watch(`${SRC}/assets/**/*`, _assets);
 });
 
 module.exports = { build, watch };

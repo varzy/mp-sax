@@ -1,12 +1,19 @@
 // g = namespace
 // 所有的公共样式都要以 g- 开头
 .g {
+  // container
+  &-container {
+    padding-left: 24rpx;
+    padding-right: 24rpx;
+  }
+
   // clearfix
   &-clearfix:before,
   &-clearfix:after {
     content: ' ';
     display: table;
   }
+
   &-clearfix:after {
     clear: both;
   }

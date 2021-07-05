@@ -1,4 +1,8 @@
-<view class="index">
+<view class="index g-container">
+  <view class="g-flex g-flex-center">
+    <image class="logo" src="/assets/images/logo.png"></image>
+  </view>
+
   <view class="samples">
     <view class="sample" wx:for="{{samples}}" wx:key="index">
       <jumper text="{{item.text}}" route-name="{{item.routeName}}" />

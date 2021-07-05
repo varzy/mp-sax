@@ -1,6 +1,7 @@
 pages:
   - pages/index/index
   - pages/samples/basic/basic
+  - pages/samples/comps/comps
   - pages/samples/waterfall/waterfall
 window:
   backgroundTextStyle: light

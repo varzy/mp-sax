@@ -6,5 +6,6 @@
 export const Routes = {
   Index: '/pages/index/index',
   SampleBasic: '/pages/samples/basic/basic',
+  SampleComps: '/pages/samples/comps/comps',
   SampleWaterfall: '/pages/samples/waterfall/waterfall'
 };

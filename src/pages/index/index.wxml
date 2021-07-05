@@ -1,6 +1,6 @@
 <view class="index g-container">
-  <view class="g-flex g-flex-center">
-    <image class="logo" src="/assets/images/logo.png"></image>
+  <view class="logo g-flex g-flex-center">
+    <image class="logo-img" src="/assets/images/logo.png"></image>
   </view>
 
   <view class="samples">
